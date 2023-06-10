@@ -2,10 +2,10 @@ type IConditionalClasses = {
     [k: string]: boolean | boolean[] | (() => boolean),
 }
 
-function gCN(unconditionalClasses: string[]): string
-function gCN(conditionalClass: IConditionalClasses): string
-function gCN(unconditionalClasses: string[], conditionalClass: IConditionalClasses): string
-function gCN(arg1: unknown, arg2?: unknown): string {
+function generateClassName(unconditionalClasses: string[]): string
+function generateClassName(conditionalClass: IConditionalClasses): string
+function generateClassName(unconditionalClasses: string[], conditionalClass: IConditionalClasses): string
+function generateClassName(arg1: unknown, arg2?: unknown): string {
     function conditionalClassBuilder(arg: IConditionalClasses, classList: string[]) {
         let conditionalClasses = arg
         Object.keys(conditionalClasses).forEach(item => {

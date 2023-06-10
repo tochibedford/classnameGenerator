@@ -1,8 +1,8 @@
 
-function gCN(unconditionalClasses)
-function gCN(conditionalClass)
-function gCN(unconditionalClasses, conditionalClass)
-function gCN(arg1, arg2){
+function generateClassName_(unconditionalClasses)
+function generateClassName_(conditionalClass)
+function generateClassName_(unconditionalClasses, conditionalClass)
+function generateClassName_(arg1, arg2){
     function conditionalClassBuilder(arg, classList) {
         let conditionalClasses = arg
         Object.keys(conditionalClasses).forEach(item => {
